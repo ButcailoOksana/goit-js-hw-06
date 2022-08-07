@@ -1,13 +1,13 @@
-const fontSizeEl = document.querySelector('input#font-size-control');
-const fontTextEl = document.querySelector('#text');
-// console.log(fontSizeEl);
-// console.log(fontSizeEl.value);
-// console.log(fontTextEl);
+const input = document.querySelector("input#font-size-control");
+const span = document.querySelector("#text");
+console.log(input);
+console.log(input.value);
+console.log(span);
 
-fontSizeEl.addEventListener('change', setOuput);
+input.addEventListener("change", setOuput);
 
 function setOuput() {
-  const fontSizeValue = fontSizeEl.value;
+  const fontSizeValue = input.value;
   console.log(`Встановлено розмір шрифту -> ${fontSizeValue}px!`);
-  fontTextEl.style.fontSize = `${fontSizeValue}px`;
+  span.style.fontSize = `${fontSizeValue}px`;
 }
