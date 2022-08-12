@@ -1,9 +1,7 @@
 
 
 
-const valueInputEl = document.querySelector('#validation-input');
-const valuelength = valueInputEl.dataset.length;
-console.log(valuelength);
+
 
 
 
